@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:id="@+id/scroll"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/my"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginVertical="20dp"
+        android:id="@+id/bottom"
+        android:paddingHorizontal="20dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/backimage"
+            android:background="@drawable/veerbackground"
+            android:layout_height="300dp"></ImageView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="INVOICE"
+            android:textColor="@color/black"
+            android:id="@+id/invoice"
+            android:textSize="40dp"
+            android:textStyle="bold"></TextView>
+
+
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="50dp"
+    android:layout_alignParentEnd="true"
+    android:src="@drawable/veer"
+    android:layout_height="50dp"
+    android:layout_marginTop="10dp"
+    android:id="@+id/logo"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    android:layout_alignParentRight="true">
+</de.hdodenhof.circleimageview.CircleImageView>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:text="Service Hawk"
+    android:fontFamily="sans-serif-condensed"
+    android:layout_below="@id/invoice"
+    android:layout_marginTop="10dp"
+    android:textStyle="bold"
+    android:textSize="10dp"
+    android:textColor="#000000"
+    android:id="@+id/design"
+    android:layout_height="wrap_content"></TextView>
+
+<TextView
+    android:layout_width="100dp"
+    android:layout_below="@id/design"
+    android:id="@+id/address"
+    android:textColor="@color/black"
+    android:fontFamily="sans-serif-condensed"
+    android:textSize="10dp"
+    android:text="Sheetal Paradise, near tanatan dhaba, Bhopal,
+    Madhya Pradesh 462041"
+    android:layout_height="wrap_content"></TextView>
+
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:text="BILL TO"
+    android:textStyle="bold"
+    android:fontFamily="sans-serif-condensed"
+    android:textColor="@color/black"
+    android:id="@+id/billto"
+    android:textSize="11dp"
+    android:layout_below="@id/address"
+    android:layout_marginTop="16dp"
+    android:layout_height="wrap_content"></TextView>
+
+<TextView
+    android:layout_width="90dp"
+    android:layout_below="@id/billto"
+    android:id="@+id/billtoad"
+    android:paddingRight="5dp"
+    android:textColor="@color/black"
+    android:fontFamily="sans-serif-condensed"
+    android:textSize="10dp"
+    android:text="Virendra shilpkar 8349156371"
+    android:layout_height="wrap_content"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="SHIP TO"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            android:visibility="invisible"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_toRightOf="@id/address"
+            android:layout_below="@id/address"
+            android:layout_marginTop="16dp"
+            android:textSize="11dp"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:layout_width="90dp"
+            android:layout_below="@id/billto"
+            android:id="@+id/shipadd"
+            android:textSize="10dp"
+            android:visibility="invisible"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_toRightOf="@id/address"
+            android:text="bahadurgarh raghogarh 27 flat pin 473226"
+            android:layout_height="wrap_content"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="INVOICE #"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/invoice1"
+            android:textColor="@color/black"
+            android:textSize="11dp"
+            android:layout_toRightOf="@id/shipadd"
+            android:layout_below="@id/address"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="IN-001"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="10dp"
+            android:textColor="@color/black"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/invoice2"
+            android:layout_toRightOf="@id/invoice1"
+            android:layout_below="@id/address"
+            android:layout_marginTop="16dp"
+            android:gravity="end"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="INVOICE DATE"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/invoicedate"
+            android:textSize="11dp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/shipadd"
+            android:layout_below="@id/invoice1"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="29/01/2004"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/invoicedate2"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            android:layout_toRightOf="@id/invoicedate"
+            android:layout_below="@id/invoice1"
+            android:gravity="end"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"></TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="P.O.#"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/po"
+            android:visibility="gone"
+            android:textSize="11dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/shipadd"
+            android:layout_below="@id/invoicedate"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="2430/2019"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/po2"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            android:textSize="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_toRightOf="@id/po"
+            android:layout_below="@id/invoicedate"
+            android:gravity="end"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"></TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="TRANSACTION ID"
+            android:textStyle="bold"
+            android:id="@+id/duedate"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="11dp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/shipadd"
+            android:layout_below="@id/po"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="12345610AV12"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/duedate2"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/duedate"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_below="@id/po"
+            android:textSize="10dp"
+            android:gravity="end"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"></TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_below="@id/duedate"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:id="@+id/view"
+            android:layout_height="1dp"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="8"
+            android:id="@+id/linear"
+            android:layout_below="@+id/view"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="QTY"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="SERVICE NAME"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center_horizontal"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="UNIT PRICE"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:gravity="end"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="AMOUNT"
+                android:gravity="end"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_weight="2"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"></TextView>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_below="@id/linear"
+            android:background="@color/colorPrimary"
+            android:id="@+id/view2"
+            android:layout_height="1dp"></View>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/view2"
+            android:layout_marginTop="5dp"
+            android:id="@+id/linear2"
+            android:weightSum="8"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="20dp"
+                android:text="1"
+                android:layout_weight="2"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="17dp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_weight="2"
+                android:textSize="10dp"
+                android:gravity="start"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/black"
+                android:text="Fronted design restructure"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_width="50dp"
+                android:text="9,999.00"
+                android:textSize="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_weight="2"
+                android:gravity="end"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_width="50dp"
+                android:text="9,999.00"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:layout_weight="2"
+                android:gravity="end"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/linear2"
+            android:layout_marginTop="5dp"
+            android:id="@+id/linear3"
+            android:weightSum="8"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="20dp"
+                android:text="2"
+                android:layout_weight="2"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="17dp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_weight="2"
+                android:textSize="10dp"
+                android:gravity="start"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/black"
+                android:text="Costom icon package"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_width="50dp"
+                android:text="999.00"
+                android:textSize="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_weight="2"
+                android:gravity="end"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_width="50dp"
+                android:text="999.00"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:layout_weight="2"
+                android:gravity="end"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/linear3"
+            android:layout_marginTop="5dp"
+            android:id="@+id/linear4"
+            android:weightSum="8"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="20dp"
+                android:text="3"
+                android:layout_weight="2"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="17dp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_weight="2"
+                android:textSize="10dp"
+                android:gravity="start"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/black"
+                android:text="Gandhi mouse pad"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_width="50dp"
+                android:text="99.00"
+                android:textSize="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_weight="2"
+                android:id="@+id/unit"
+                android:gravity="end"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_width="50dp"
+                android:text="99.00"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:layout_weight="2"
+                android:gravity="end"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/linear4"
+            android:layout_marginTop="20dp"
+            android:id="@+id/linear5"
+            android:weightSum="8"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="20dp"
+                android:text=""
+                android:layout_weight="2"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="17dp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_weight="2"
+                android:textSize="10dp"
+                android:gravity="start"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_width="50dp"
+                android:text="Subtotal"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_weight="2"
+                android:gravity="end"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_width="50dp"
+                android:text="12,245.00"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:layout_weight="2"
+                android:gravity="end"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/linear5"
+            android:layout_marginTop="5dp"
+            android:id="@+id/linear6"
+            android:weightSum="8"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="20dp"
+                android:text=""
+                android:layout_weight="2"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="17dp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_weight="2"
+                android:textSize="10dp"
+                android:gravity="start"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_width="50dp"
+                android:text="Discout"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_weight="2"
+                android:gravity="end"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_width="50dp"
+                android:text="245.00"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:layout_weight="2"
+                android:gravity="end"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/linear6"
+            android:layout_marginTop="5dp"
+            android:id="@+id/linear7"
+            android:weightSum="8"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="20dp"
+                android:text=""
+                android:layout_weight="2"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="17dp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_weight="2"
+                android:textSize="10dp"
+                android:gravity="start"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_width="50dp"
+                android:text="GST 18.0%"
+                android:textSize="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_weight="2"
+                android:gravity="end"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_width="50dp"
+                android:text="12,245.00"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:layout_weight="2"
+                android:gravity="end"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/linear7"
+            android:layout_marginTop="5dp"
+            android:id="@+id/linear8"
+            android:weightSum="8"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="20dp"
+                android:text=""
+                android:layout_weight="2"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="17dp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_weight="2"
+                android:textSize="10dp"
+                android:gravity="start"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_width="50dp"
+                android:text="TOTAL"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_weight="2"
+                android:gravity="end"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_width="55dp"
+                android:text="₹12,245.00"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:layout_weight="2"
+                android:gravity="end"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_below="@id/backimage"
+    android:layout_marginTop="80dp"
+    android:id="@+id/relative"
+    android:layout_height="100dp">
+
+
+    <TextView
+        android:id="@+id/thanks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/yesteryear"
+        android:text="Thank you"
+        android:gravity="bottom"
+        android:textColor="@color/black"
+        android:textSize="30dp"></TextView>
+
+</RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+</ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="DOWNLOAD INVOICE"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:id="@+id/download"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/black"
+        android:layout_height="40dp"></TextView>
+</RelativeLayout>

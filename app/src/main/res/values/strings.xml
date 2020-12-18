@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Invoice</string>
+    <string name="title">Invoice_saved</string>
+    <string name="title2">tap_to_view_your_invoice</string>
+
+
+</resources>
