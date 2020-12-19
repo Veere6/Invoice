@@ -74,10 +74,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 verifyStoragePermissions(MainActivity.this);
-
                 takeScreenshot();
                 sendOnChannel1();
-
+                Intent intent=new Intent(MainActivity.this,ProfileActivity.class);
+                startActivity(intent);
             }
         });
     }
